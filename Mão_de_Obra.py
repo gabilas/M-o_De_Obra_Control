@@ -55,6 +55,13 @@ def main():
         
         else:
             codigoSIAGO = Aba_SIAGO["F{}".format(linhaSIAGO)].value
+            if codigoSIAGO == "1119":
+                codigoSIAGO = "4633"
+            elif codigoSIAGO == "1120":
+                codigoSIAGO = "4632"
+            else:
+                codigoSIAGO = codigoSIAGO
+                
             serviço = Aba_SIAGO["G{}".format(linhaSIAGO)].value
             qtdserviço = Aba_SIAGO["H{}".format(linhaSIAGO)].value
             
