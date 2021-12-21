@@ -14,16 +14,16 @@ def main():
 
     for celulaSIAGO in Aba_SIAGO['L']:  
         linhaSIAGO = celulaSIAGO.row
-        verificação = str(Aba_SIAGO["L{}".format(linhaSIAGO)].value)
+        verificação = Aba_SIAGO["L{}".format(linhaSIAGO)].value
 
         if "LINHA VIVA" in verificação:
-            codigoSIAGO = str(Aba_SIAGO["F{}".format(linhaSIAGO)].value)
-            serviço = str(Aba_SIAGO["G{}".format(linhaSIAGO)].value)
-            qtdserviço = str(Aba_SIAGO["H{}".format(linhaSIAGO)].value)
+            codigoSIAGO = Aba_SIAGO["F{}".format(linhaSIAGO)].value
+            serviço = Aba_SIAGO["G{}".format(linhaSIAGO)].value
+            qtdserviço = Aba_SIAGO["H{}".format(linhaSIAGO)].value
             
             for celulaLV in LV['B']:
                 linhaLV = celulaLV.row
-                codigoLV = str(LV["B{}".format(linhaLV)].value)
+                codigoLV = LV["B{}".format(linhaLV)].value
 
                 if codigoLV == codigoSIAGO:
                     if serviço == "R":
@@ -54,23 +54,21 @@ def main():
                     print("Aguarde... Escrevendo...")
         
         else:
-            codigoSIAGO = str(Aba_SIAGO["F{}".format(linhaSIAGO)].value)
+            codigoSIAGO = Aba_SIAGO["F{}".format(linhaSIAGO)].value
 
-            if codigoSIAGO == "1119":
-                codigoSIAGO = "4633"
-                print(codigoSIAGO)
-            elif codigoSIAGO == "1120":
-                codigoSIAGO = "4632"
-                print(codigoSIAGO)
+            if codigoSIAGO == 1119:
+                codigoSIAGO = 4633
+            elif codigoSIAGO == 1120:
+                codigoSIAGO = 4632
             else:
                 codigoSIAGO = codigoSIAGO
                 
-            serviço = str(Aba_SIAGO["G{}".format(linhaSIAGO)].value)
-            qtdserviço = str(Aba_SIAGO["H{}".format(linhaSIAGO)].value)
+            serviço = Aba_SIAGO["G{}".format(linhaSIAGO)].value
+            qtdserviço = Aba_SIAGO["H{}".format(linhaSIAGO)].value
             
             for celulaLM in LM['B']:
                 linhaLM = celulaLM.row
-                codigoLM = str(LM["B{}".format(linhaLM)].value)
+                codigoLM = LM["B{}".format(linhaLM)].value
 
                 if codigoLM == codigoSIAGO:
                     if serviço == "R":
