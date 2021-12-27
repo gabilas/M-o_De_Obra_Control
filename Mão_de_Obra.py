@@ -29,22 +29,22 @@ def main():
                     if serviço == "R":
                         LV["G{}".format(linhaLV)] = qtdserviço
                     
-                    elif codigoLV == "1052":
+                    elif codigoLV == 1052:
                         LV["E{}".format(linhaLV)] = qtdserviço
                     
-                    elif codigoLV == "1053":
+                    elif codigoLV == 1053:
                         LV["E{}".format(linhaLV)] = qtdserviço
                     
-                    elif codigoLV == "1056":
+                    elif codigoLV == 1056:
                         LV["E{}".format(linhaLV)] = qtdserviço
 
-                    elif codigoLV == "1057":
+                    elif codigoLV == 1057:
                         LV["E{}".format(linhaLV)] = qtdserviço
 
-                    elif codigoLV == "1058":
+                    elif codigoLV == 1058:
                         LV["E{}".format(linhaLV)] = qtdserviço
 
-                    elif codigoLV == "1059":
+                    elif codigoLV == 1059:
                         LV["E{}".format(linhaLV)] = qtdserviço
 
                     else:
@@ -74,22 +74,22 @@ def main():
                     if serviço == "R":
                         LM["G{}".format(linhaLM)] = qtdserviço
 
-                    elif codigoLM == "1050":
+                    elif codigoLM == 1050:
                         LM["E{}".format(linhaLM)] = qtdserviço
                     
-                    elif codigoLM == "1051":
+                    elif codigoLM == 1051:
                         LM["E{}".format(linhaLM)] = qtdserviço
                     
-                    elif codigoLM == "1054":
+                    elif codigoLM == 1054:
                         LM["E{}".format(linhaLM)] = qtdserviço
 
-                    elif codigoLM == "1055":
+                    elif codigoLM == 1055:
                         LM["E{}".format(linhaLM)] = qtdserviço
 
-                    elif codigoLM == "1058":
+                    elif codigoLM == 1058:
                         LM["E{}".format(linhaLM)] = qtdserviço
 
-                    elif codigoLM == "1059":
+                    elif codigoLM == 1059:
                         LM["E{}".format(linhaLM)] = qtdserviço
                     
                     else:
